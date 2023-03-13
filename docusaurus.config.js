@@ -3,7 +3,7 @@ module.exports = {
   tagline:
     'Simple and complete testing utilities that encourage good testing practices',
   url: 'https://QubitPi.github.io/',
-  baseUrl: '/testing-library-docs',
+  baseUrl: '/testing-library-docs/',
   organizationName: 'QubitPi',
   projectName: 'testing-library-docs',
   scripts: [
