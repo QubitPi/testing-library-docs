@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_testing_library_docs=self.webpackChunkreact_testing_library_docs||[]).push([[6945],{6945:(e,s,r)=>{r.r(s)}}]);
