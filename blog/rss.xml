@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Testing Library Blog</title>
+        <link>https://component-testing.react.qubitpi.org/blog</link>
+        <description>Testing Library Blog</description>
+        <lastBuildDate>Thu, 25 Apr 2019 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Testing Library Updates: new release, github org, open collective, and twitter account]]></title>
+            <link>https://component-testing.react.qubitpi.org/blog/2019/04/25/new-org</link>
+            <guid>/2019/04/25/new-org</guid>
+            <pubDate>Thu, 25 Apr 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hello friends! I'm pleased to announce the recent updates to the testing-library]]></description>
+            <content:encoded><![CDATA[<p>Hello friends! I'm pleased to announce the recent updates to the testing-library
+family of tools! As always, we're committed to giving you the best tools to
+enable you to have confidence in shipping your applications. That's why the
+guiding principle for everything we do is:</p><blockquote><p><a href="https://twitter.com/kentcdodds/status/977018512689455106" target="_blank" rel="noopener noreferrer">The more your tests resemble the way your software is used, the more confidence they can give you.</a></p></blockquote><p>This guiding principle has given us direction and we've been able to accomplish
+a lot in the testing space. To further our mission, I'd like to make a few
+announcements about changes going on in the testing-library world.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="dom-testing-library-v4-released"><a href="https://github.com/testing-library/dom-testing-library" target="_blank" rel="noopener noreferrer">dom-testing-library</a> v4 released!<a class="hash-link" href="#dom-testing-library-v4-released" title="Direct link to heading">​</a></h2><p>This is actually a pretty small release, but I think it's worth mentioning
+anyway. We try to keep breaking changes to a minimum. This release only has two
+breaking changes. One is removal of deprecated methods you probably weren't
+using anyway, and the other reveals potential bugs in your tests. So you should
+be able to upgrade to this version with little-to-no effort.</p><p>If you do experience breakages, it's probably due to something like this:</p><iframe src="https://codesandbox.io/embed/9zw1wv59mw?fontsize=14&amp;module=%2Fsrc%2F__tests__%2Findex.js&amp;previewwindow=tests&amp;view=editor" title="React Codesandbox" style="width:100%;height:500px;border:0;border-radius:4px;overflow:hidden" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe><p>We hope that this helps you catch bugs better!</p><p><a href="https://github.com/testing-library/react-testing-library" target="_blank" rel="noopener noreferrer">react-testing-library</a>
+and
+<a href="https://github.com/testing-library/cypress-testing-library" target="_blank" rel="noopener noreferrer">cypress-testing-library</a>
+have already been updated and released major version bumps of their own to
+account for this upgrade. Other wrappers will hopefully follow shortly based on
+their respective matinainers' schedules.</p><blockquote><p><a href="https://github.com/testing-library/dom-testing-library/releases/tag/v4.0.0" target="_blank" rel="noopener noreferrer">View the Changelog</a></p></blockquote><h2 class="anchor anchorWithStickyNavbar_LWe7" id="testing-library-on-github"><a href="https://github.com/testing-library" target="_blank" rel="noopener noreferrer">Testing Library on GitHub</a><a class="hash-link" href="#testing-library-on-github" title="Direct link to heading">​</a></h2><p>We've created a new org on GitHub to manage the family of testing library
+projects. The best part of the "Testing Library" isn't the code, but the
+philosophy behind it. So we're using the organization as a way to group all the
+projects that share the same philosophy and general utilities so whether you're
+using Vue, Cypress, or React (Native), you'll have a super testing tool that
+you're familiar with.</p><p>Here are the current (or soon to be) members of the org:</p><ul><li><a href="https://github.com/testing-library/dom-testing-library" target="_blank" rel="noopener noreferrer">dom-testing-library</a></li><li><a href="https://github.com/testing-library/react-testing-library" target="_blank" rel="noopener noreferrer">react-testing-library</a></li><li><a href="https://github.com/testing-library/cypress-testing-library" target="_blank" rel="noopener noreferrer">cypress-testing-library</a></li><li><a href="https://github.com/dfcook/vue-testing-library" target="_blank" rel="noopener noreferrer">vue-testing-library</a></li><li><a href="https://github.com/testing-library/native-testing-library" target="_blank" rel="noopener noreferrer">native-testing-library</a>
+(React Native)</li><li><a href="https://github.com/patrickhulce/pptr-testing-library" target="_blank" rel="noopener noreferrer">pptr-testing-library</a>
+(Puppeteer)</li><li><a href="https://github.com/wyze/bs-react-testing-library" target="_blank" rel="noopener noreferrer">bs-react-testing-library</a>
+(ReasonReact)</li><li><a href="https://github.com/testing-library/testcafe-testing-library" target="_blank" rel="noopener noreferrer">testcafe-testing-library</a></li><li><a href="https://github.com/Gpx/user-event" target="_blank" rel="noopener noreferrer">user-event</a></li><li><a href="https://github.com/testing-library/jest-dom" target="_blank" rel="noopener noreferrer">jest-dom</a></li><li><a href="https://github.com/testing-library/jest-native" target="_blank" rel="noopener noreferrer">jest-native</a></li></ul><p>(Hopefully we'll have
+<a href="https://github.com/angular-extensions/testing-library/issues/4" target="_blank" rel="noopener noreferrer">angular on there eventually</a>
+<a href="https://github.com/emberjs/rfcs/pull/327" target="_blank" rel="noopener noreferrer">as well as ember</a>).</p><p>What's cool is that building wrappers for your JavaScript framework of choice is
+often quite simple (as I demonstrate on
+<a href="https://testingjavascript.com" target="_blank" rel="noopener noreferrer">TestingJavaScript.com</a>). And as mentioned below,
+you can carry these same principles to non-DOM platforms as well!</p><blockquote><p><a href="https://github.com/testing-library" target="_blank" rel="noopener noreferrer">Checkout the Org and Star our Repos</a></p></blockquote><h2 class="anchor anchorWithStickyNavbar_LWe7" id="testing-library-on-open-collective"><a href="https://opencollective.com/testing-library" target="_blank" rel="noopener noreferrer">Testing Library on Open Collective</a><a class="hash-link" href="#testing-library-on-open-collective" title="Direct link to heading">​</a></h2><p>If the Testing Library family of tools has provided you any value at all, we'd
+encourage you (or your employer) to contribute to our new
+<a href="https://opencollective.com/testing-library" target="_blank" rel="noopener noreferrer">Open Collective</a>.</p><p>It is intended that funds raised by this open collective be used to:</p><ul><li>Donate to charities and other good causes</li><li>Purchase testing-library related merchandise (stickers, T-Shirts, etc).</li><li>Pay for hosting/domains/etc.</li></ul><p>There are currently no plans to pay people who work on the project, but we
+reserve the right to do so if it makes sense in the future.</p><blockquote><p><a href="https://opencollective.com/testing-library" target="_blank" rel="noopener noreferrer">Contribute to our open collective</a></p></blockquote><h2 class="anchor anchorWithStickyNavbar_LWe7" id="testing-library-on-twitter"><a href="https://twitter.com/testinglib" target="_blank" rel="noopener noreferrer">Testing Library on Twitter</a><a class="hash-link" href="#testing-library-on-twitter" title="Direct link to heading">​</a></h2><p>A lot of chatter is going on in the Testing Library world on Twitter, so we've
+created a twitter account you can follow and keep up with what's going on.</p><blockquote><p><a href="https://twitter.com/testinglib" target="_blank" rel="noopener noreferrer">Follow @TestingLib</a></p></blockquote><h2 class="anchor anchorWithStickyNavbar_LWe7" id="testing-library-on-spectrum"><a href="https://spectrum.chat/testing-library" target="_blank" rel="noopener noreferrer">Testing Library on Spectrum</a><a class="hash-link" href="#testing-library-on-spectrum" title="Direct link to heading">​</a></h2><p>We've had a pretty active spectrum community for react-testing-library. We're in
+the process of moving that to a more general Testing Library spectrum so we can
+have all discussion around the different wrappers in one place. There are over
+600 members of our spectrum community (special shout-out to
+<a href="https://spectrum.chat/users/gpx" target="_blank" rel="noopener noreferrer">Giorgio</a> who has been SUPER helpful to people
+there.) Please join us!</p><blockquote><p><a href="https://spectrum.chat/testing-library" target="_blank" rel="noopener noreferrer">Join us on Spectrum</a></p></blockquote><h2 class="anchor anchorWithStickyNavbar_LWe7" id="testing-library-on-react-native"><a href="https://callstack.github.io/react-native-testing-library/" target="_blank" rel="noopener noreferrer">Testing Library on React Native</a><a class="hash-link" href="#testing-library-on-react-native" title="Direct link to heading">​</a></h2><p>I'm really happy to announce a super solution to the React Native testing space.
+The DOM is quite different from native, as I mentioned before, it's not the code
+but the concepts that really make the Testing Library great. I'm happy to say
+that <a href="https://github.com/bcarroll22" target="_blank" rel="noopener noreferrer">Brandon Carroll</a> has successfully ported
+those concepts to a solution for React Native and I'm really happy with it. Give
+it a look if you're building React Native applications and want confidence that
+they continue to work as you make changes!</p><blockquote><p><a href="https://callstack.github.io/react-native-testing-library/" target="_blank" rel="noopener noreferrer">Checkout native-testing-library</a></p></blockquote><h2 class="anchor anchorWithStickyNavbar_LWe7" id="learn-testing-library"><a href="/docs/learning">Learn Testing Library</a><a class="hash-link" href="#learn-testing-library" title="Direct link to heading">​</a></h2><p>There's been a LOT of activity around the Testing Library principles and tools
+in the content space. We do have
+<a href="/docs/learning">a page that lists learning materials</a>, and more gets added to
+it daily. If you know of blog posts, YouTube videos, courses, or anything else
+about the Testing Library family of tools, please contribute to the list!</p><blockquote><p><a href="https://github.com/testing-library/testing-library-docs/edit/main/docs/learning.mdx" target="_blank" rel="noopener noreferrer">Contribute to the learning materials page</a></p></blockquote><h2 class="anchor anchorWithStickyNavbar_LWe7" id="other-exciting-news">Other Exciting news<a class="hash-link" href="#other-exciting-news" title="Direct link to heading">​</a></h2><p>As of a few months ago,
+<a href="https://reactjs.org/blog/2019/02/06/react-v16.8.0.html" target="_blank" rel="noopener noreferrer">the React team officially recommends</a>
+you use react-testing-library to test your react applications. That's kinda neat
+:)</p><p>At the React Amsterdam <a href="https://osawards.com/react/" target="_blank" rel="noopener noreferrer">Open Source awards</a>
+ceremony, react-testing-library won the award for the Most impactful
+contribution to the community!</p><p><img loading="lazy" alt="Open Source Awards award" src="/assets/images/award-4ab55893b6382919b43dff3db505287a.jpg" width="693" height="900" class="img_ev3q"></p><p>react-testing-library <em>also</em> received recognition on the
+<a href="https://www.thoughtworks.com/radar/languages-and-frameworks" target="_blank" rel="noopener noreferrer">ThoughtWorks Technology Radar</a>
+as technology they believe is "Worth exploring with the goal of understanding
+how it will affect your enterprise." We think so too :)</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="special-thank-you">Special Thank You<a class="hash-link" href="#special-thank-you" title="Direct link to heading">​</a></h2><p>Each of the projects has had many contributors and on most projects in
+<a href="https://github.com/testing-library" target="_blank" rel="noopener noreferrer">the org</a>, you'll find a table of
+contributors. We're super grateful for all the contributions people have made to
+the projects. I'd like to also give a special shout-out to people who have made
+an especially significant impact on the Testing Library family of tools and
+community.</p><p><a href="https://kentcdodds.com" target="_blank" rel="noopener noreferrer">Myself 👋</a>, <a href="https://alexkrolick.com/" target="_blank" rel="noopener noreferrer">Alex Krolick</a>,
+<a href="https://github.com/bcarroll22" target="_blank" rel="noopener noreferrer">Brandon Carroll</a>,
+<a href="https://twitter.com/Gpx" target="_blank" rel="noopener noreferrer">Giorgio</a>,
+<a href="https://twitter.com/gnapse" target="_blank" rel="noopener noreferrer">Ernesto García</a>, and
+<a href="https://github.com/dfcook" target="_blank" rel="noopener noreferrer">Daniel Cook</a>.</p><p>As I said, there have been many who have contributed a great deal to the
+community, but these people stand out to me as individuals who have done
+especially great work. Thank you!</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a class="hash-link" href="#conclusion" title="Direct link to heading">​</a></h2><p>No matter what platform you're working with, the guiding principles of the
+Testing Library family can be applied to the tests for that platform. Take a
+step back and consider how closely your tests are resembling the way your
+software is used. If you can, consider what lightweight but powerful utilities
+would enable others to test their software in that way as well and create a
+library for that! Maybe it can join the Testing Library family of tools!</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Multi-Framework Code Blocks]]></title>
+            <link>https://component-testing.react.qubitpi.org/blog/2019/03/17/code-blocks</link>
+            <guid>/2019/03/17/code-blocks</guid>
+            <pubDate>Sun, 17 Mar 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Many of the code samples have been updated to include tabs to switch between]]></description>
+            <content:encoded><![CDATA[<p>Many of the code samples have been updated to include tabs to switch between
+"plain" DOM Testing Library syntax and the wrappers for React, Cypress, etc.</p><p>Thanks to <a href="https://github.com/tylerthehaas" target="_blank" rel="noopener noreferrer">@tylerthehaas</a> for pointing out that
+the previous examples could be confusing if you were targeting a specific
+library, and to the Docusaurus team for adding support for code tabs in version
+<a href="https://github.com/facebook/Docusaurus/blob/master/CHANGELOG.md#170---2019-1-23" target="_blank" rel="noopener noreferrer">1.7.2</a>.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New Site]]></title>
+            <link>https://component-testing.react.qubitpi.org/blog/2018/12/29/new-site</link>
+            <guid>/2018/12/29/new-site</guid>
+            <pubDate>Sat, 29 Dec 2018 00:00:00 GMT</pubDate>
+            <description><![CDATA[We have a docs site now! It's built with Docusaurus.]]></description>
+            <content:encoded><![CDATA[<p>We have a docs site now! It's built with <a href="https://docusaurus.io" target="_blank" rel="noopener noreferrer">Docusaurus</a>.</p><p>The new site is the homepage for DOM Testing Library, React Testing Library, and
+the <!-- -->*<!-- -->-testing-library ecosystem. Check out the landing pages for each:</p><ul><li><a href="/docs/dom-testing-library/intro">🐙 DOM Testing Library</a></li><li><a href="/docs/react-testing-library/intro">⚛️ React Testing Library</a></li><li><a href="/docs/cypress-testing-library/intro">🌲 Cypress Testing Library</a></li></ul><p>💯 Thank you to everyone who has contributed to the docs over the past months -
+the content has been ported over and the hope is that this site will provide a
+centralized place for examples, API reference, and community links in 2019 and
+beyond!</p><p>🎉 Happy new year!</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
