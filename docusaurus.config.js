@@ -2,7 +2,7 @@ module.exports = {
   title: 'Testing Library',
   tagline:
     'Simple and complete testing utilities that encourage good testing practices',
-  url: 'https://testing-library.com',
+  url: 'https://component-testing.react.qubitpi.org',
   baseUrl: '/',
   projectName: 'testing-library-docs',
   scripts: [
